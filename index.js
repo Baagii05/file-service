@@ -1,6 +1,5 @@
 const AWS = require('aws-sdk');
 const express = require('express');
-const cors = require('cors');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
@@ -10,7 +9,6 @@ const app = express();
 const PORT = process.env.PORT_FILE_MANAGER || 5001;
 
 
-app.use(cors());
 app.use(express.json());
 
 
